@@ -10,7 +10,7 @@ class Empleado extends CI_Controller {
 		$this->load->model("CargoModel");
 	}
 
-	public function index()
+	public function index()L
 	{
 		$data = array(
 			'listadoEmpleados' => $this->EmpleadoModel->listEmpleados() , 
