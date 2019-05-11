@@ -1,1 +1,9 @@
 http://icttask.com/php/post/codeigniter-ajax-crud-using-bootstrap-modal-delete
+
+  https://fernando-gaitan.com.ar/aprendiendo-php-parte-18-validar-formularios/
+        http://demo.webslesson.info/insert-data-through-bootstrap-modal-by-using-ajax-php/
+
+
+
+
+https://www.formget.com/codeigniter-jquery-ajax-post/

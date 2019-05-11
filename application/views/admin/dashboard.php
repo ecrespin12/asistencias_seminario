@@ -8,11 +8,11 @@
                 <!-- Barra lateral y right sidebar toggle -->
                 <div class="row page-titles">
                     <div class="col-md-5 align-self-center">
-                        <h4 class="text-themecolor">SEMINARIOS</h4>
+                        <h4 class="text-themecolor">INICIO</h4>
                     </div>
                     <div class="col-md-7 align-self-center text-right">
                         <div class="d-flex justify-content-end align-items-center">
-                            <button type="button" class="btn btn-info d-none d-lg-block m-l-15"><i class="fas fa-plus"></i> Agregar Seminario</button>
+                            <button type="button" class="btn btn-info d-none d-lg-block m-l-15" data-toggle="modal" data-target="#modal-new-algo" ><i class="fas fa-plus"></i> Agregar Algo</button>
                         </div>
                     </div>
                 </div>
@@ -23,91 +23,11 @@
                     <div class="col-12">
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="card-title">Listado de Seminarios</h4>
-      
-                                <div class="table-responsive m-t-40">
-                                    <table id="tabla" class="display nowrap table table-hover table-striped table-bordered" cellspacing="0" width="100%">
-                                        <thead>
-                                            <tr>
-                                                <th>Seminario</th>
-                                                <th>Fecha</th>
-                                                <th>Hora</th>
-                                                <th>Capacidad</th>
-                                                <th>Ponente</th>
-                                                <th>Acciones</th>
-                                            </tr>
-                                        </thead>
+                            <!-- inicio todo el html aqui  -->
+                                <h4 class="card-title">INICIO</h4>
+                                    
 
-                                        <tbody>
-                                            <tr>
-                                                <td>Programacion Orienta a Objetos</td>
-                                                <td>17/02/2019</td>
-                                                <td>13:00-17:00</td>
-                                                <td>61</td>
-                                                <td>Juan Perez Perez</td>
-                                                <td>
-                                                    <button class="btn btn-sm btn-warning" type="button" data-toggle="modal" data-target="#modal-edificio" ><span class="fas fa-pencil-alt"></span></button> 
-                                                    <button class="btn btn-sm btn-danger" type="button"><span class="fas fa-trash-alt"></span></button> 
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>Programacion Orienta a Objetos</td>
-                                                <td>17/02/2019</td>
-                                                <td>13:00-17:00</td>
-                                                <td>61</td>
-                                                <td>Juan Perez Perez</td>
-                                                <td>
-                                                    <button class="btn btn-sm btn-warning" type="button" data-toggle="modal" data-target="#modal-edificio" ><span class="fas fa-pencil-alt"></span></button> 
-                                                    <button class="btn btn-sm btn-danger" type="button"><span class="fas fa-trash-alt"></span></button> 
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>Programacion Orienta a Objetos</td>
-                                                <td>17/02/2019</td>
-                                                <td>13:00-17:00</td>
-                                                <td>61</td>
-                                                <td>Juan Perez Perez</td>
-                                                <td>
-                                                    <button class="btn btn-sm btn-warning" type="button" data-toggle="modal" data-target="#modal-edificio" ><span class="fas fa-pencil-alt"></span></button> 
-                                                    <button class="btn btn-sm btn-danger" type="button"><span class="fas fa-trash-alt"></span></button> 
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>Programacion Orienta a Objetos</td>
-                                                <td>17/02/2019</td>
-                                                <td>13:00-17:00</td>
-                                                <td>61</td>
-                                                <td>Juan Perez Perez</td>
-                                                <td>
-                                                    <button class="btn btn-sm btn-warning" type="button" data-toggle="modal" data-target="#modal-edificio" ><span class="fas fa-pencil-alt"></span></button> 
-                                                    <button class="btn btn-sm btn-danger" type="button"><span class="fas fa-trash-alt"></span></button> 
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>Programacion Orienta a Objetos</td>
-                                                <td>17/02/2019</td>
-                                                <td>13:00-17:00</td>
-                                                <td>61</td>
-                                                <td>Juan Perez Perez</td>
-                                                <td>
-                                                    <button class="btn btn-sm btn-warning" type="button" data-toggle="modal" data-target="#modal-edificio" ><span class="fas fa-pencil-alt"></span></button> 
-                                                    <button class="btn btn-sm btn-danger" type="button"><span class="fas fa-trash-alt"></span></button> 
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>Programacion Orienta a Objetos</td>
-                                                <td>17/02/2019</td>
-                                                <td>13:00-17:00</td>
-                                                <td>61</td>
-                                                <td>Juan Perez Perez</td>
-                                                <td>
-                                                    <button class="btn btn-sm btn-warning" type="button" data-toggle="modal" data-target="#modal-edificio" ><span class="fas fa-pencil-alt"></span></button> 
-                                                    <button class="btn btn-sm btn-danger" type="button"><span class="fas fa-trash-alt"></span></button> 
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                 </div>
+                            <!-- fin todo el html aqui  -->
                             </div>
                         </div>
                     </div>
@@ -122,68 +42,34 @@
 
 
 
-          <!-- modal form -->
-        <div class="modal fade" id="modal-edificio">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title">FORMULARIO DE EDIFICIO</h4>
+   
+        
+        <!-- modal content -->
+        <div id="modal-new-algo" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="display: none;" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <b><h4 class="modal-title">FORMULARIO DE ESTUDIANTES</h4></b>
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>   
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label class="control-label">Nombres:</label>
+                                <input type="text" class="form-control" id="txtNombres" name="txtNombres" placeholder="Ingresar Nombres">
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">Apellidos:</label>
+                                <input type="text" class="form-control" id="txtApellidos" name="txtApellidos" placeholder="Ingresar Apellidos">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">   
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button> 
+                        <button type="submit" class="btn btn-primary">Guardar</button>
+                    </div>
                 </div>
-                <div class="modal-body">            
-                <form name="frm" action="" method="POST">
-                      <div class="form-row">
-
-                        <div class="form-group col-md-6 col-sm-6 col-xs-12">
-                          <label>Codigo</label>
-                          <input type="text" class="form-control col-md-7 col-xs-12" name="codigo" placeholder="Ingresar Codigo" required="">
-                        </div>
-
-                      </div>
-                      <div class="form-row">
-                        <div class="form-group col-md-12 col-sm-12 col-xs-12">
-                          <label>Nombre</label>
-                          <input type="text" class="form-control col-md-7 col-xs-12" name="nombre" placeholder="Ingresar Nombre" required="">
-                        </div>
-                      </div>
-
-                      <div class="form-row">
-                        <div class="form-group col-md-12 col-sm-12 col-xs-12">
-                          <label>Descripcion</label>
-                          <input type="text" class="form-control col-md-7 col-xs-12" name="descripcion" placeholder="Ingresar Descripcion" required="">
-                        </div>
-                      </div>
-
-                      <div class="form-row">
-                        <div class="form-group col-md-12 col-sm-12 col-xs-12">
-                          <label>Estado </label><br/>
-                          <label>
-                            <input type="checkbox" class="js-switch" checked name="estado" /> Activo
-                          </label>
-                        </div>
-                      </div>
-
-                      <div class="form-row">
-                        <div class="form-group col-md-12 col-sm-12 col-xs-12">
-                            <div class="ln_solid"></div>
-                        </div>
-                      </div>
-
-                      <div class="form-row">
-                          <div class="form-group col-md-12 col-sm-12 col-xs-12">
-                            <button type="submit" class="btn btn-primary">Guardar</button>
-                            <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
-                           
-                            
-                          </div>
-                      </div>
-                    </form>                                     
-                </div>
-
             </div>
-            <!-- /.modal-content -->
         </div>
-        <!-- /.modal-dialog -->
-    </div>
-    <!-- /.modal -->
+        <!-- /.modal -->
+         

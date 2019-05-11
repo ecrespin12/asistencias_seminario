@@ -64,6 +64,44 @@
        
     </script>
     <!-- fin - scripts personalizados -->
+    <script>  
+
+
+    $('#frm_seminario_new').on("submit", function(event){  
+      event.preventDefault();  
+      if($('#txtFacultad_new').val() == "")    
+        alert("Facultad es requerida");  
+      
+      else if($('#txtEscuela_new').val() == "")   
+        alert("Escuela es requerida");  
+      
+      else if($('#txtCodigo_new').val() == "") 
+        alert("Codigo de seminario es requerido"); 
+      
+      else if($('#txtSeminario_new').val() == "") 
+        alert("Nombre de seminario es requerido"); 
+    else  
+    {  
+      $.ajax({  
+        url:"<?php echo base_url();?>admin/Seminario/insertSeminario",  
+        method:"POST",  
+        data:$('#frm_seminario_new').serialize(),  
+        beforeSend:function(){  
+          $('#guardar').val("Guardando...");  
+         }, 
+    
+         success:function(data){  
+          $('#frm_seminario_new')[0].reset(); 
+       
+          $('#modal_seminario_new').modal('hide'); 
+          // $('#tabla_seminario').html(data); 
+       
+        }  
+      });  
+    }  
+  });
+
+ </script>
 
 </body>
 </html>
