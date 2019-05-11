@@ -127,58 +127,33 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel">Titulo</h4>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title">FORMULARIO DE EDIFICIO</h4>
+                  
                 </div>
-                <div class="modal-body">            
-                <form name="frm" action="" method="POST">
-                      <div class="form-row">
-
-                        <div class="form-group col-md-6 col-sm-6 col-xs-12">
-                          <label>Codigo</label>
-                          <input type="text" class="form-control col-md-7 col-xs-12" name="codigo" placeholder="Ingresar Codigo" required="">
-                        </div>
-
-                      </div>
-                      <div class="form-row">
-                        <div class="form-group col-md-12 col-sm-12 col-xs-12">
-                          <label>Nombre</label>
-                          <input type="text" class="form-control col-md-7 col-xs-12" name="nombre" placeholder="Ingresar Nombre" required="">
-                        </div>
-                      </div>
-
-                      <div class="form-row">
-                        <div class="form-group col-md-12 col-sm-12 col-xs-12">
-                          <label>Descripcion</label>
-                          <input type="text" class="form-control col-md-7 col-xs-12" name="descripcion" placeholder="Ingresar Descripcion" required="">
-                        </div>
-                      </div>
-
-                      <div class="form-row">
-                        <div class="form-group col-md-12 col-sm-12 col-xs-12">
-                          <label>Estado </label><br/>
-                          <label>
-                            <input type="checkbox" class="js-switch" checked name="estado" /> Activo
-                          </label>
-                        </div>
-                      </div>
-
-                      <div class="form-row">
-                        <div class="form-group col-md-12 col-sm-12 col-xs-12">
-                            <div class="ln_solid"></div>
-                        </div>
-                      </div>
-
-                      <div class="form-row">
+                <div class="modal-body">        
+                    
+                <form class="mt-4" name="" method="POST">
+                    <div class="form-group">
+                        <label>Nombres</label>
+                        <input type="text" class="form-control"  placeholder="Ingrese Nombre">
+                       
+                    </div>
+                    <div class="form-group">
+                        <label>Apellidos</label>
+                        <input type="text" class="form-control" placeholder="Ingrese Apellidos">
+                    </div>
+     
+                    <div class="form-row">
                           <div class="form-group col-md-12 col-sm-12 col-xs-12">
                             <button type="submit" class="btn btn-primary">Guardar</button>
-                            <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
-                           
-                            
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>               
                           </div>
                       </div>
-                    </form>                                     
+                                   
+                </form>
+                                    
                 </div>
 
             </div>
