@@ -28,7 +28,7 @@
                           <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><i class="icon-speedometer"></i><span class="hide-menu"> Cerrar Sesión</span></a></li> 
                       <?php elseif($user=="admin"):?>
                           <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><i class="icon-speedometer"></i><span class="hide-menu"> Inicio</span></a></li>
-                          <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><i class="icon-speedometer"></i><span class="hide-menu"> Seminarios</span></a></li> 
+                          <li> <a class="waves-effect waves-dark" href="<?php echo base_url();?>seminario/Seminario" aria-expanded="false"><i class="icon-speedometer"></i><span class="hide-menu"> Seminarios</span></a></li> 
                           <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><i class="icon-speedometer"></i><span class="hide-menu"> Estudiantes</span></a></li> 
                           <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><i class="icon-speedometer"></i><span class="hide-menu"> Usuarios</span></a></li> 
                           <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><i class="icon-speedometer"></i><span class="hide-menu"> Informes</span></a></li>                           
