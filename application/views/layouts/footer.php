@@ -38,77 +38,8 @@
     <script src="<?php echo base_url();?>assets/template/cdn.datatables.net/buttons/1.5.1/js/buttons.print.min.js"></script>
     <!-- fin - Esto es para la funcionalidad de exportar -->
 
-    <!-- inicio - scripts personalizados -->
-    <script>
-        $('#tabla').DataTable({
-          "language": {
-            "lengthMenu": "Mostrar _MENU_ registros por pagina",
-            "zeroRecords": "No se encontraron resultados en su busqueda",
-            "searchPlaceholder": "Buscar registros",
-            "info": "Mostrando registros de _START_ al _END_ de un total de  _TOTAL_ registros",
-            "infoEmpty": "No existen registros",
-            "infoFiltered": "(filtrado de un total de _MAX_ registros)",
-            "search": "Buscar:",
-            "paginate": {
-                "first": "Primero",
-                "last": "Último",
-                "next": "Siguiente",
-                "previous": "Anterior"
-            },
-        },
-
-          dom: 'Bfrtip',
-          buttons: ['copy', 'csv', 'excel', 'pdf', 'print']
-        });
-        $('.buttons-copy, .buttons-csv, .buttons-print, .buttons-pdf, .buttons-excel').addClass('btn btn-primary mr-1');
-       
-    </script>
-    <!-- fin - scripts personalizados -->
-    <script>  
-
-
-    $('#frm_seminario_new').on("submit", function(event){  
-      event.preventDefault();  
-      if($('#txtFacultad_new').val() == "")    
-        alert("Facultad es requerida");  
-      
-      else if($('#txtEscuela_new').val() == "")   
-        alert("Escuela es requerida");  
-      
-      else if($('#txtCodigo_new').val() == "") 
-        alert("Codigo de seminario es requerido"); 
-      
-      else if($('#txtSeminario_new').val() == "") 
-        alert("Nombre de seminario es requerido"); 
-    else  
-    {  
-      $.ajax({  
-        url:"<?php echo base_url();?>admin/Seminario_api/insertSeminario",  
-        method:"POST",  
-        data:$('#frm_seminario_new').serialize(),  
-        beforeSend:function(){  
-          $('#guardar').val("Guardando...");  
-         }, 
-    
-         success:function(data){  
-          $('#frm_seminario_new')[0].reset(); 
-       
-          $('#modal_seminario_new').modal('hide'); 
-          // $('#tabla_seminario').html(data); 
-       
-        }  
-      });  
-    }  
-  });
-
-  
-
- </script>
-
-
-
+    <script src="<?php echo base_url(); ?>assets/template/sweetAlert/sweetalert.js"></script>
 
 </body>
 </html>
-
 

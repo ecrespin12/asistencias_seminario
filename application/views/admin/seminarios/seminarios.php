@@ -40,7 +40,25 @@
                                             </tr>
                                         </thead>
 
-                                        <tbody id="resp">
+                                        <tbody>
+                                        <?php if(!empty($listadoSeminarios)): ?>	
+                                                 <?php foreach($listadoSeminarios as $seminario): ?>	
+                                                    <tr>	
+                                                        <td><?php echo $seminario->codigoSeminario;?></td>	
+                                                        <td><?php echo $seminario->nombre;?></td>	
+                                                        <td><?php echo $seminario->nombrePonente;?></td>	
+                                                        <td><?php echo $seminario->fecha;?></td>	
+                                                        <td><?php echo $seminario->horario;?></td>	
+                                                        <td><?php echo $seminario->aula;?></td>	
+                                                        <td><?php echo $seminario->cupo;?></td>	
+                                                        <td>	
+                                                            <button class="btn btn-sm btn-warning" type="button" data-toggle="modal" data-target="#modal-edit-seminario" ><span class="fas fa-pencil-alt"></span></button> 	
+                                                            <a href="<?php echo base_url()?>admin/Seminario/deleteSeminario/<?php echo $seminario->seminarioID; ?>" class="btn btn-sm btn-danger alert-delete"> <span class="fas fa-trash-alt"></span> </a>
+                                         	
+                                                        </td>	
+                                                    </tr>	
+                                                <?php endforeach;?> 	
+                                            <?php endif;?>     
                           
                                         </tbody>
                                     </table>
@@ -128,4 +146,4 @@
         </div>
         <!-- /.modal -->        
 
-        <script src="<?php echo base_url();?>assets/ajaxList/seminarios/seminario.js"></script>
+        <!-- <script src="<?php echo base_url();?>assets/ajaxList/seminarios/seminario.js"></script> -->

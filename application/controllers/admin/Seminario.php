@@ -26,6 +26,7 @@ class Seminario extends CI_Controller {
 		$this->load->view('layouts/aside');
 		$this->load->view('admin/seminarios/seminarios', $data);
 		$this->load->view('layouts/footer');
+		$this->load->view('layouts/scripts/adm_seminario');
 	}
 
 
@@ -42,11 +43,23 @@ class Seminario extends CI_Controller {
 			'escuela' => $escuela ,
 			'codigoSeminario'=>$codigoSeminario,
 			'nombre'=>$nombreSeminario,
+			
 		 );
 
 		 if($this->SeminarioModel->insertSeminario($data))
 		 redirect(base_url()."admin/Seminario");
 	
 
+	}
+
+	public function deleteSeminario($id){
+		
+		$data = array(
+			'seminarioID' => $id,
+			
+		 );
+		 $this->SeminarioModel->deleteSeminario($data);
+	
+	
 	}
 }
