@@ -83,7 +83,7 @@
     else  
     {  
       $.ajax({  
-        url:"<?php echo base_url();?>admin/Seminario/insertSeminario",  
+        url:"<?php echo base_url();?>admin/Seminario_api/insertSeminario",  
         method:"POST",  
         data:$('#frm_seminario_new').serialize(),  
         beforeSend:function(){  
@@ -101,7 +101,12 @@
     }  
   });
 
+  
+
  </script>
+
+
+
 
 </body>
 </html>

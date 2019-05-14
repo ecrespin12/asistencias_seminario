@@ -13,4 +13,17 @@ class SeminarioModel extends CI_Model {
         $resultado = $this->db->query($stored_procedure, $data);
         return $resultado;
     }
+
+    public function updateSeminario($data){
+        $stored_procedure = "CALL update_seminario_sp(?,?,?,?,?)";
+        $resultado = $this->db->query($stored_procedure, $data);
+        return $resultado;
+    }
+
+    public function deleteSeminario($data) {
+        $stored_procedure = "CALL delete_seminario_sp(?)";
+        $resultado = $this->db->query($stored_procedure, $data);
+        return $resultado;
+    }
+
 }
