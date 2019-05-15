@@ -32,7 +32,14 @@
                           <li> <a class="waves-effect waves-dark" href="<?php echo base_url();?>admin/Seminario" aria-expanded="false"><i class="icon-speedometer"></i><span class="hide-menu"> Seminarios</span></a></li> 
                           <li> <a class="waves-effect waves-dark" href="<?php echo base_url();?>admin/Estudiante" aria-expanded="false"><i class="icon-speedometer"></i><span class="hide-menu"> Estudiantes</span></a></li> 
                           <li> <a class="waves-effect waves-dark" href="<?php echo base_url();?>admin/Usuario" aria-expanded="false"><i class="icon-speedometer"></i><span class="hide-menu"> Usuarios</span></a></li> 
-                          <li> <a class="waves-effect waves-dark" href="<?php echo base_url();?>admin/Informe" aria-expanded="false"><i class="icon-speedometer"></i><span class="hide-menu"> Informes</span></a></li>                           
+                         
+                          <li> <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-email"></i><span class="hide-menu">Informes</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="<?php echo base_url();?>admin/Informe">Informe 1</a></li>
+                                <li><a href="<?php echo base_url();?>admin/Informe/indexInformes2">Informes2</a></li>
+                                <li><a href="">Compose Mail</a></li>
+                            </ul>
+                          </li>                          
 
                           <li> <a class="waves-effect waves-dark" href="#" aria-expanded="false"><i class="icon-speedometer"></i><span class="hide-menu"> Cerrar Sesión</span></a></li> 
                         

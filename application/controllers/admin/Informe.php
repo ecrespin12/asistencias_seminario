@@ -18,7 +18,18 @@ class Informe extends CI_Controller {
 	{
 		$this->load->view('layouts/header');
 		$this->load->view('layouts/aside');
-		$this->load->view('admin/dashboard');
+		$this->load->view('admin/informes/informes');
 		$this->load->view('layouts/footer');
+		$this->load->view('layouts/scripts/adm_seminario');
+		
+	}
+	public function indexInformes2()
+	{
+		$this->load->view('layouts/header');
+		$this->load->view('layouts/aside');
+		$this->load->view('admin/informes/informes2');
+		$this->load->view('layouts/footer');
+		$this->load->view('layouts/scripts/adm_seminario');
+		
 	}
 }
