@@ -35,9 +35,10 @@
                          
                           <li> <a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="ti-email"></i><span class="hide-menu">Informes</span></a>
                             <ul aria-expanded="false" class="collapse">
-                                <li><a href="<?php echo base_url();?>admin/Informe">Informe 1</a></li>
-                                <li><a href="<?php echo base_url();?>admin/Informe/indexInformes2">Informes2</a></li>
-                                <li><a href="">Compose Mail</a></li>
+                                <li><a href="<?php echo base_url();?>admin/Informe">Informe Asistencia Seminario</a></li>
+                                <li><a href="<?php echo base_url();?>admin/Informe/indexInformes2">Informe Inscripciones</a></li>
+                                <li><a href="<?php echo base_url();?>#">Informe Pago/totales</a></li>
+                                <li><a href="<?php echo base_url();?>admin/Informe/indexInformes4">Informe Seminarios</a></li>
                             </ul>
                           </li>                          
 

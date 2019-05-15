@@ -25,6 +25,30 @@
                             <div class="card-body">
                             <!-- inicio todo el html aqui  -->
                                 <h4 class="card-title">INFORMES 1</h4>
+                                <table id="tabla" class="display nowrap table table-hover table-striped table-bordered" cellspacing="0" width="100%">
+                                        <thead>
+                                            <tr>
+                                                <th>Codigo</th>
+                                                <th>Fecha</th>
+                                                <th>Codigo Usuario</th>
+                                                <th>Codigo Inscripcion</th>
+                                            </tr>
+                                        </thead>
+
+                                        <tbody>
+                                        <?php if(!empty($listadoAsistenciaSeminario)): ?>	
+                                                 <?php foreach($listadoAsistenciaSeminario as $seminario): ?>	
+                                                    <tr>	
+                                                        <td><?php echo $seminario->asistenciaID;?></td>	
+                                                        <td><?php echo $seminario->horaFecha;?></td>	
+                                                        <td><?php echo $seminario->usuarioID;?></td>	
+                                                        <td><?php echo $seminario->inscripcionID;?></td>
+                                                    </tr>	
+                                                <?php endforeach;?> 	
+                                            <?php endif;?>     
+                          
+                                        </tbody>
+                                    </table>
                                  
 
                             <!-- fin todo el html aqui  -->
