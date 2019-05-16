@@ -12,7 +12,6 @@
                     </div>
                     <div class="col-md-7 align-self-center text-right">
                         <div class="d-flex justify-content-end align-items-center">
-                            <button type="button" class="btn btn-info d-none d-lg-block m-l-15" data-toggle="modal" data-target="#modal-new-algo" ><i class="fas fa-plus"></i> Agregar Algo</button>
                         </div>
                     </div>
                 </div>
@@ -24,7 +23,8 @@
                         <div class="card">
                             <div class="card-body">
                             <!-- inicio todo el html aqui  -->
-                                <h4 class="card-title">INFORMES 1</h4>
+                                <h4 class="card-title">INFORMES ASISTENCIA SEMINARIO</h4>
+                                
                                 <table id="tabla" class="display nowrap table table-hover table-striped table-bordered" cellspacing="0" width="100%">
                                         <thead>
                                             <tr>

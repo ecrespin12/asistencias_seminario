@@ -14,6 +14,7 @@ class Informe extends CI_Controller {
 			$this->load->model("admin/InformeInscripciones");
 			$this->load->model("admin/InformeSeminario");
 
+
 		}
 
 
@@ -26,7 +27,8 @@ class Informe extends CI_Controller {
 		$this->load->view('layouts/header');
 		$this->load->view('layouts/aside');
 		$this->load->view('admin/informes/informes', $data);
-		$this->load->view('layouts/footer');	
+		$this->load->view('layouts/footer');
+		$this->load->view('layouts/scripts/adm_seminario');	
 	}
 
 	public function indexInformes2()
@@ -39,6 +41,7 @@ class Informe extends CI_Controller {
 		$this->load->view('layouts/aside');
 		$this->load->view('admin/informes/informes2', $data);
 		$this->load->view('layouts/footer');	
+		$this->load->view('layouts/scripts/adm_seminario');	
 	}
 	public function indexInformes4()
 	{
@@ -50,6 +53,7 @@ class Informe extends CI_Controller {
 		$this->load->view('layouts/aside');
 		$this->load->view('admin/informes/informes4', $data);
 		$this->load->view('layouts/footer');	
+		$this->load->view('layouts/scripts/adm_seminario');	
 	}
-	
+
 }
