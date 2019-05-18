@@ -28,7 +28,7 @@ class Auth extends CI_Controller
 		if($user=="estudiante" || $user=="encargado" || $user=="admin")
 			$login=true;		
 		else 
-			 $login=false;
+			$login=false;
 		
 		//si el nombre de usuario ingresado es correcto enviarlo al controlador Dashboard
 		if($login==true){
@@ -37,7 +37,14 @@ class Auth extends CI_Controller
 				'login' => $login
 			);
 			$this->session->set_userdata($data);
-			redirect(base_url() . "Dashboard");
+
+			if ($user == "admin") {
+				redirect(base_url() . "admin/inicio");
+			}elseif ($user == "encargado") {
+				redirect(base_url() . "encargado/inicio");
+			}elseif ($user == "estudiante") {
+				redirect(base_url() . "estudiante/inicio");
+			}
 		}
 		else{
 			$this->session->set_flashdata("error", "El usuario y/o contraseña son incorrectos");

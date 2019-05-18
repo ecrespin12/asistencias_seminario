@@ -11,14 +11,19 @@ class Inicio extends CI_Controller {
 					redirect(base_url());
 			}
 
+			$this->load->model("admin/InicioModel");
+
 		}
-
-
+	
 	public function index()
 	{
+		$data = array(
+			'CountSeminarios' => $this->InicioModel->CountSeminarios() , 
+		);
+
 		$this->load->view('layouts/header');
 		$this->load->view('layouts/aside');
-		$this->load->view('admin/dashboard');
+		$this->load->view('estudiantes/inicio', $data);
 		$this->load->view('layouts/footer');
 	}
 }
