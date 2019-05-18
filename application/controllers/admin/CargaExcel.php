@@ -95,6 +95,9 @@ require_once APPPATH.'/third_party/Spout/Autoloader/autoload.php';
                   // cerramos el archivo EXCEL
                   $reader->close();
 
+                  $this->session->set_flashdata("exitoSem", "exit");
+                  redirect(base_url() . "admin/CargaExcel");
+
             } 
             else {
 
@@ -109,6 +112,7 @@ require_once APPPATH.'/third_party/Spout/Autoloader/autoload.php';
 
 
       }
+      
 
 
 }

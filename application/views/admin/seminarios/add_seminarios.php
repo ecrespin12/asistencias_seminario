@@ -30,51 +30,47 @@
                                
                             <section>
 
-//abrimos el fromulario y llamamos a la función del controlador
+                            <?php if ($this->session->flashdata("exitoSem")) : ?>   
+                  <script type="text/javascript">
+                      swal({
+                          html: true,
+                          title: "Se subio",
+                          text: "<h5 class='alertMsj'>El Excel se subio corractamente.</h5>",
+                          type: "success",
+                          confirmButtonText: "Aceptar"
+                              });
+                  </script>
+            <?php endif; ?>
+
+
 <form action="<?php echo base_url(); ?>admin/CargaExcel/guardarExcel" method="POST" enctype="multipart/form-data">
 
- //los imputs
 
- <div class="col-md-3">
-   <div class="form-group">
-     <label>Sede</label>
-        <input type="text" class="form-control" id="rut_usu" 
-         name="rut_usu">   
-   </div>
- </div>
-
- <div class="col-md-3">
-   <div class="form-group">
-     <label>Sede</label>
-        <input type="text" class="form-control" id="fecha_ini" name="fecha_ini">   
-   </div>
- </div>
+<center>
 
 
-  <div class="col-md-3">
-    <div class="form-group">
-     <label>Sede</label>
-        <input type="text" class="form-control" id="fecha_ter" name="fecha_ter">   
-  </div>
-  </div>
+            <div class="col-lg-6 col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Subir Lista de Seminario</h4>
+                                <label for="input-file-now">Subir archivo excel con el listado de seminarios</label>
+                                <input type="file" id="input-file-now" class="dropify" name="file" accept=".xlsx" />
+                            </div>
+                        </div>
+            </div>
 
-   <div class="col-md-3">
-    <div class="form-group">
-        <label>Seleccione un xlxs</label>
-        <input type="file" name="file" id="file" accept=".xlsx" class="form-control" > 
-     </div>
-    </div>
 
 
      <div class="col-md-3" style="top:25px; left: 30px;" >
                <div class="form-group">
-
-                   <button type="submit" id="Ingresar" name="Ingresar" class="btn bg-aqua">Guardar</button>
-                    <button name="cancelar" id="cancelar" class="btn bg-red" style="width:80px;">Cancelar</button>
+               <input type="submit" name="Ingresar" id="Ingresar" value="Guardar" class="btn btn-primary" />
+                 
+               <button type="button" class="btn btn-danger" >Cancelar</button> 
+                    
                </div>
            </div>
            </div>
-
+                            </center>
  </form>
 
 </section>

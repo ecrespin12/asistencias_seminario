@@ -7,17 +7,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Iniciar Sesión</title>
 
-  <link rel="stylesheet" href="<?php echo base_url(); ?>assets/template/sweetAlert/sweetalert.css">
-  <link rel="stylesheet" href="<?php echo base_url(); ?>assets/template/bootstrap/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="<?php echo base_url(); ?>assets/template/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="<?php echo base_url();?>assets/template/sweetAlert/sweetalert.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="<?php echo base_url();?>assets/template/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="<?php echo base_url(); ?>assets/login/css/style.css">
-
+  <style type="text/css">
+	.login-form {
+		width: 340px;
+    	margin: 50px auto;
+	}
+    .login-form form {
+    	margin-bottom: 15px;
+        background: #f7f7f7;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+        padding: 30px;
+    }
+    .login-form h2 {
+        margin: 0 0 15px;
+    }
+    .form-control, .btn {
+        min-height: 38px;
+        border-radius: 2px;
+    }
+    .btn {        
+        font-size: 15px;
+        font-weight: bold;
+    }
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
   <script src="<?php echo base_url(); ?>assets/template/sweetAlert/sweetalert.js"></script>
  
 </head>
 
 <body>
-<div class="row">
+<div class="">
  <div class="col-md-12 col-sm-12 col-xs-12">
     <div class="form-row">
         <div class="login-form ">
@@ -36,39 +60,25 @@
       
           <form action="<?php echo base_url(); ?>Auth/login" method="post"  class="form_SRC" data-type-form="login" autocomplete="off">
       
-            <h2 class="text-center">Iniciar Sesion</h2>
-            <div class="or-seperator"><i></i></div>
-      
-          <div class="form-row">
-              <div class="form-group">
-                <div class="input-group">
-                  <span class="input-group-addon"><i class="fa fa-user"></i></span>
-                  <input type="text" class="form-control" name="usuario" placeholder="Usuario" required="">
-                </div>
-              </div>
-          </div>
-      
-          <div class="form-row">
-              <div class="form-group">
-                <div class="input-group">
-                  <span class="input-group-addon"><i class="fa fa-lock"></i></span>
-                  <input type="password" class="form-control" name="password" placeholder="Contraseña" required="">
-                </div>
-              </div>
-          </div>
-      
-          <div class="form-row">
-              <div class="form-group">
-                <button type="submit" class="btn btn-primary login-btn btn-block">Ingresar</button>
-              </div>
-              <div class="clearfix">
-                <a href="#" class="pull-right">¿Olvido la contraseña?</a>
-              </div>
-          </div>
+          <h2 class="text-center">Iniciar Sesion</h2>   
+          <div class="or-seperator"><i></i></div>    
+        <div class="form-group">
+            <input type="text" name="usuario" class="form-control" placeholder="Ingresar Usuario" required="required">
+        </div>
+        <div class="form-group">
+            <input type="password" name="password" class="form-control" placeholder="Ingresar Contraseña" required="required">
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary btn-block">Iniciar Sesion</button>
+        </div>
+        <div class="clearfix">
+            
+            <a href="#" class="pull-right">¿Olvido la contraseña?</a>
+        </div> 
       
           </form>
          
-          <p class="text-center text-muted small"> Todos los derechos reservados | Estandares de Programacion, Grupo 12 <a href="#"></a></p>
+          <p class="text-center text-muted small">Estandares de Programacion 2019, Grupo 12 <a href="#"></a></p>
         </div>
     </div>
  </div>
@@ -81,5 +91,4 @@
 
 </html>
 
-<!-- TODO: El form de login es de hacerlo responsive, esto es a nivel front-end  -->
-
+                               		                            
