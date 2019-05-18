@@ -29,6 +29,17 @@ class Seminario extends CI_Controller {
 		$this->load->view('layouts/scripts/adm_seminario');
 	}
 
+	public function Cargar()
+	{
+		
+
+		$this->load->view('layouts/header');
+		$this->load->view('layouts/aside');
+		$this->load->view('admin/seminarios/add_seminarios');
+		$this->load->view('layouts/footer');
+		$this->load->view('layouts/scripts/adm_seminario');
+	}
+
 
 	public function insertSeminario() {
 		//recibir los names de input desde la vista por post
@@ -51,6 +62,8 @@ class Seminario extends CI_Controller {
 	
 
 	}
+
+	
 
 	public function deleteSeminario($id){
 		

@@ -7,23 +7,28 @@
           
                 <!-- Barra lateral y right sidebar toggle -->
                 <div class="row page-titles">
-                    <div class="col-md-5 align-self-center">
-                        <h4 class="text-themecolor">SEMINARIOS</h4>
+                    <div class="col-md-4 align-self-center">
+                        <h4 class="text-themecolor">LISTA DE SEMINARIOS</h4>
                     </div>
-                    <div class="col-md-7 align-self-center text-right">
-                        <div class="d-flex justify-content-end align-items-center">
-                            <button type="button" class="btn btn-info d-none d-lg-block m-l-15" data-toggle="modal" data-target="#modal_seminario_new" ><i class="fas fa-plus"></i> Agregar Seminario</button>
-                        </div>
-                    </div>
+        
                 </div>
                 <!-- Fin Barra lateral y right sidebar toggle -->
 
                 <!-- Inicio Page Content -->
                 <div class="row">
                     <div class="col-12">
+  
                         <div class="card">
+
                             <div class="card-body">
-                                <h4 class="card-title">Listado de Seminarios</h4>
+                            <div class="col-md-12 ">
+                                <div class="">
+                                    <a href="<?php echo base_url();?>admin/CargaExcel" class="btn btn-success"><i class="fas fa-upload"></i> Subir Excel</a>
+                                    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#modal_seminario_new" ><i class="fas fa-plus"></i> Agregar Seminario</button>
+                                </div>
+                        
+                            </div>
+                           
       
                                 <div id = "tabla_seminario" class="table-responsive m-t-40">
                                     <table id="tabla" class="display nowrap table table-hover table-striped table-bordered" cellspacing="0" width="100%">
