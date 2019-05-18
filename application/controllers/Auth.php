@@ -8,6 +8,7 @@ class Auth extends CI_Controller
 	public function __construct()
 	{
 		parent::__construct();
+		$this->load->model("admin/UsuarioModel");
 	
 	}
 
@@ -24,34 +25,33 @@ class Auth extends CI_Controller
 		//Temporal
 
 		$user = $this->input->post("usuario");
+		$password = $this->input->post("password");
+		$res = $this->UsuarioModel->login($user, $password);
 	
-		if($user=="estudiante" || $user=="encargado" || $user=="admin")
-			$login=true;		
-		else 
-			$login=false;
+		if (!$res) {
+			$this->session->set_flashdata("error", "El usuario y/o contraseña son incorrectos");
+
+			redirect(base_url());
+		} else {
 		
-		//si el nombre de usuario ingresado es correcto enviarlo al controlador Dashboard
-		if($login==true){
+
 			$data  = array(
-				'usuario' => $user,
-				'login' => $login
+				'id' => $res->usuarioID,
+				'usuario' => $res->usuario,
+				'rol' => $res->rolID,
+				'login' => true,
+				'perfil' => 'admin'
 			);
 			$this->session->set_userdata($data);
-
-			if ($user == "admin") {
-				redirect(base_url() . "admin/inicio");
-			}elseif ($user == "encargado") {
-				redirect(base_url() . "encargado/inicio");
-			}elseif ($user == "estudiante") {
-				redirect(base_url() . "estudiante/inicio");
-			}
+			redirect(base_url() . "admin/inicio");
 		}
-		else{
-			$this->session->set_flashdata("error", "El usuario y/o contraseña son incorrectos");
-			redirect(base_url());}
+		
+
 	
 
 	}
+
+
 
 
 }

@@ -1,5 +1,5 @@
 <?php
-  $user=  $this->session->userdata("usuario");
+  $user=  $this->session->userdata("perfil");
 ?>
    
  <!-- Left Sidebar - estilos se encuentran en sidebar.scss  -->
