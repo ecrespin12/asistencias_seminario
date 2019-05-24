@@ -43,6 +43,18 @@ class Informe extends CI_Controller {
 		$this->load->view('layouts/footer');	
 		$this->load->view('layouts/scripts/adm_seminario');	
 	}
+	public function indexInformes3()
+	{
+		$data = array(
+			'listadoUsuarios' => $this->InformeUsuarios->listUsuarios() , 
+		);
+
+		$this->load->view('layouts/header');
+		$this->load->view('layouts/aside');
+		$this->load->view('admin/informes/informes3', $data);
+		$this->load->view('layouts/footer');
+		$this->load->view('layouts/scripts/adm_seminario');		
+	}
 	public function indexInformes4()
 	{
 		$data = array(

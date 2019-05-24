@@ -29,9 +29,8 @@
                                         <thead>
                                             <tr>
                                                 <th>Codigo</th>
-                                                <th>Fecha</th>
-                                                <th>Codigo Usuario</th>
-                                                <th>Codigo Inscripcion</th>
+                                                <th>Nombre Seminario</th>
+                                                <th>Total Asistencias</th>
                                             </tr>
                                         </thead>
 
@@ -39,10 +38,9 @@
                                         <?php if(!empty($listadoAsistenciaSeminario)): ?>	
                                                  <?php foreach($listadoAsistenciaSeminario as $seminario): ?>	
                                                     <tr>	
-                                                        <td><?php echo $seminario->asistenciaID;?></td>	
-                                                        <td><?php echo $seminario->horaFecha;?></td>	
-                                                        <td><?php echo $seminario->usuarioID;?></td>	
-                                                        <td><?php echo $seminario->inscripcionID;?></td>
+                                                        <td><?php echo $seminario->Codigo;?></td>	
+                                                        <td><?php echo $seminario->nombre;?></td>
+                                                        <td><?php echo $seminario->Total_Asistencias;?></td>
                                                     </tr>	
                                                 <?php endforeach;?> 	
                                             <?php endif;?>     

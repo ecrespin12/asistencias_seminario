@@ -37,7 +37,7 @@
                             <ul aria-expanded="false" class="collapse">
                                 <li><a href="<?php echo base_url();?>admin/Informe">Informe Asistencia Seminario</a></li>
                                 <li><a href="<?php echo base_url();?>admin/Informe/indexInformes2">Informe Inscripciones</a></li>
-                                <li><a href="<?php echo base_url();?>#">Informe Pago/totales</a></li>
+                                <li><a href="<?php echo base_url();?>admin/Informe/indexInformes3">Informe Usuarios</a></li>
                                 <li><a href="<?php echo base_url();?>admin/Informe/indexInformes4">Informe Seminarios</a></li>
                             </ul>
                           </li>                          

@@ -25,8 +25,31 @@
                             <div class="card-body">
                             <!-- inicio todo el html aqui  -->
                                 <h4 class="card-title">INFORMES 3</h4>
-                                 
+                                <table id="tabla" class="display nowrap table table-hover table-striped table-bordered" cellspacing="0" width="100%">
+                                        <thead>
+                                            <tr>
+                                            <tr>
+                                                <th>Codigo</th>
+                                                <th>Usuario</th>
+                                                <th>Cargo</th>
+                                                
+                                            </tr>
+                                            </tr>
+                                        </thead>
 
+                                        <tbody>
+                                        <?php if(!empty($listadoUsuarios)): ?>	
+                                                 <?php foreach($listadoUsuarios as $usuario): ?>	
+                                                    <tr>	
+                                                        <td><?php echo $usuario->Codigo;?></td>	
+                                                        <td><?php echo $usuario->usuario;?></td>	
+                                                        <td><?php echo $usuario->Cargo;?></td>
+                                                    </tr>	
+                                                <?php endforeach;?> 	
+                                            <?php endif;?>     
+                          
+                                        </tbody>
+                                    </table>
                             <!-- fin todo el html aqui  -->
                             </div>
                         </div>

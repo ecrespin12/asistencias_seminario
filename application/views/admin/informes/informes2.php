@@ -28,10 +28,15 @@
                                 <table id="tabla" class="display nowrap table table-hover table-striped table-bordered" cellspacing="0" width="100%">
                                         <thead>
                                             <tr>
-                                                <th>Codigo Inscripcion</th>
-                                                <th>Codigo Estudiante</th>
-                                                <th>Codigo Seminario</th>
-                                                <th>Estado</th>
+                                            <tr>
+                                                <th>Codigo</th>
+                                                <th>Seminario</th>
+                                                <th>Fecha</th>
+                                                <th>Horario</th>
+                                                <th>Aula</th>
+                                                <th>Ponente</th>
+                                                <th>Inscripciones</th>
+                                            </tr>
                                             </tr>
                                         </thead>
 
@@ -39,10 +44,13 @@
                                         <?php if(!empty($listadoInscripcionSeminario)): ?>	
                                                  <?php foreach($listadoInscripcionSeminario as $seminario): ?>	
                                                     <tr>	
-                                                        <td><?php echo $seminario->inscripcionID;?></td>	
-                                                        <td><?php echo $seminario->estudianteID;?></td>	
-                                                        <td><?php echo $seminario->seminarioID;?></td>	
-                                                        <td><?php echo $seminario->estado;?></td>
+                                                        <td><?php echo $seminario->Codigo;?></td>	
+                                                        <td><?php echo $seminario->Seminario;?></td>	
+                                                        <td><?php echo $seminario->fecha;?></td>	
+                                                        <td><?php echo $seminario->horario;?></td>
+                                                        <td><?php echo $seminario->aula;?></td>
+                                                        <td><?php echo $seminario->Ponente;?></td>
+                                                        <td><?php echo $seminario->Inscriptos;?></td>
                                                     </tr>	
                                                 <?php endforeach;?> 	
                                             <?php endif;?>     
